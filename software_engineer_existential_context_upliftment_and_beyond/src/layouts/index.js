@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import Swipeable from 'react-swipeable';
 import Transition from '../components/transition';
 import Logo from '../assets/imsheth.svg';
+import Favicon from '../assets/favicon.ico';
 
 import './index.css';
 
@@ -68,6 +69,7 @@ class TemplateWrapper extends Component {
         <Helmet>
           <html lang="en" />
           <title>{`${site.siteMetadata.title} - ${site.siteMetadata.description} | ${site.siteMetadata.itemName}`}</title>
+          <link rel="icon" href={Favicon} type="image/gif" sizes="16x16"></link>
           <meta name="description" content={`${site.siteMetadata.itemName}`} />
           <meta property="og:site_name" content={`${site.siteMetadata.title} - ${site.siteMetadata.description} | ${site.siteMetadata.itemName}`} />
           <meta property="og:type" content="website" />
