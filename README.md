@@ -1,1 +1,0 @@
-# software_engineer_existential_context_upliftment_and_beyond
