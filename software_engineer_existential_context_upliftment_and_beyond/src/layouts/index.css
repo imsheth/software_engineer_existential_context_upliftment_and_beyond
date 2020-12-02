@@ -1,8 +1,8 @@
 :root {
-  --bg: #fdfdfd;
+  --bg: #231F20;
   --meta: #888;
   --accent: #3178cd;
-  --text: black;
+  --text: #fdfdfd;
   --base: 1.5rem;
 }
 
@@ -166,5 +166,37 @@ header a:hover {
 }
 
 header span {
+  color: var(--text);
+}
+
+footer {
+  font-size: 50%;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 20px;
+
+  user-select: none;
+}
+
+footer a,
+time {
+  text-decoration: none;
+
+  color: var(--meta);
+}
+
+footer a:hover {
+  color: var(--meta);
+}
+
+footer span {
   color: var(--text);
 }

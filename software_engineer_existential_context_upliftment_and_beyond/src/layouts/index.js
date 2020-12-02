@@ -4,16 +4,23 @@ import { Link, navigate, StaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Swipeable from 'react-swipeable';
 import Transition from '../components/transition';
+import Logo from '../assets/imsheth.svg';
 
 import './index.css';
 
-const Header = ({ name, title, date }) => (
+const Header = ({ alt, link }) => (
   <header>
+    <a target="_blank" rel="noreferrer" href={link}><img alt={alt} style={{height: '24.5px', width: '100px'}} src={Logo} /></a>
+  </header>
+);
+
+const Footer = ({ title, date }) => (
+  <footer>
     <Link to="/1">
-      <span>{name}</span> — {title}
+     {title}
     </Link>
     <time>{date}</time>
-  </header>
+  </footer>
 );
 
 class TemplateWrapper extends Component {
@@ -58,22 +65,54 @@ class TemplateWrapper extends Component {
 
     return (
       <div>
-        <Helmet
-          title={`${site.siteMetadata.title} — ${site.siteMetadata.name}`}
-        />
+        <Helmet>
+          <html lang="en" />
+          <title>{`${site.siteMetadata.title} - ${site.siteMetadata.description} | ${site.siteMetadata.itemName}`}</title>
+          <meta name="description" content={`${site.siteMetadata.itemName}`} />
+          <meta property="og:site_name" content={`${site.siteMetadata.title} - ${site.siteMetadata.description} | ${site.siteMetadata.itemName}`} />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content={`${site.siteMetadata.title} - ${site.siteMetadata.description} | ${site.siteMetadata.itemName}`} />
+          <meta property="og:description" content={`${site.siteMetadata.itemName}`} />
+          <meta property="og:url" content={`${site.siteMetadata.siteUrl}`} />
+          {/* <meta
+            property="og:image"
+            content={`${`${site.siteMetadata.siteUrl}`}${props.data.header.childImageSharp.fixed.src}`}
+          /> */}
+          {site.siteMetadata.facebook && <meta property="article:publisher" content={`${site.siteMetadata.facebook}`} />}
+          <meta name="twitter:card" content="summary" />
+          {site.siteMetadata.twitter && (
+            <meta
+              name="twitter:site"
+              content={`@${site.siteMetadata.twitter.split('https://twitter.com/')[1]}`}
+            />
+          )}
+          <meta name="twitter:title" content={`${site.siteMetadata.title} - ${site.siteMetadata.description} | ${site.siteMetadata.itemName}`} />
+          <meta name="twitter:description" content={`${site.siteMetadata.itemName}`} />
+          <meta name="twitter:url" content={`${site.siteMetadata.siteUrl}`} />
+          {/* <meta
+            name="twitter:image"
+            content={`${`${site.siteMetadata.siteUrl}`}${props.data.header.childImageSharp.fixed.src}`}
+          /> */}
+          
+          {/* <meta property="og:image:width" content={width.toString()} />
+          <meta property="og:image:height" content={height.toString()} /> */}
+        </Helmet>
         <Header
-          name={site.siteMetadata.name}
-          title={site.siteMetadata.title}
-          date={site.siteMetadata.date}
+          alt={site.siteMetadata.title}
+          link={site.siteMetadata.siteUrl}
         />
         <Swipeable
           onSwipedLeft={this.swipeLeft}
           onSwipedRight={this.swipeRight}
         >
-          <Transition location={location}>
-            <div id="slide" style={{'width': '100%'}}>{children}</div>
-          </Transition>
+        <Transition location={location}>
+          <div id="slide" style={{'width': '100%'}}>{children}</div>
+        </Transition>
         </Swipeable>
+        <Footer
+          title={site.siteMetadata.itemName}
+          date={site.siteMetadata.itemDate}
+        />
       </div>
     );
   }
@@ -90,9 +129,17 @@ export default props => (
       query IndexQuery {
         site {
           siteMetadata {
-            name
             title
-            date
+            description
+            itemName
+            itemDate
+            siteUrl
+            facebook
+            twitter
+            linkedIn
+            github
+            stackoverflow
+            instagram
           }
         }
         allSlide {

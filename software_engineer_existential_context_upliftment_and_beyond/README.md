@@ -64,3 +64,6 @@ Examples:
 - Fabian Schultz ([@fschultz\_](https://twitter.com/fschultz_))
 - Frank Murphy ([AnIrishDuck](https://github.com/AnIrishDuck))
 - Stefan Probst ([stefanprobst](https://github.com/stefanprobst))
+
+## Reference
+- [Deployment](https://dev.to/rahuldkjain/create-deploy-gatsby-blog-on-github-pages-in-minutes-3g8e)
