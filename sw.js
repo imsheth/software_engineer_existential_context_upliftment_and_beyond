@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "revision": "068d5b0a8bbeb5cdba886a8ccb9f91af"
   },
   {
-    "url": "page-data/sq/d/242742938.json",
+    "url": "software_engineer_existential_context_upliftment_and_beyond/page-data/sq/d/242742938.json",
     "revision": "dd9efea6cab0053b0cc3c771daadd5da"
   },
   {
