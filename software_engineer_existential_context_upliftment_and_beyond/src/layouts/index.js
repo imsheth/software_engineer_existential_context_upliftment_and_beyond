@@ -81,7 +81,7 @@ class TemplateWrapper extends Component {
           <meta property="og:url" content={`${site.siteMetadata.siteUrl}`} />
           <meta
             property="og:image"
-            content={PNGLogo}
+            content={`${site.siteMetadata.coverImage}`}
           />
           {site.siteMetadata.facebook && <meta property="article:publisher" content={`${site.siteMetadata.facebook}`} />}
           <meta name="twitter:card" content="summary" />
@@ -96,7 +96,7 @@ class TemplateWrapper extends Component {
           <meta name="twitter:url" content={`${site.siteMetadata.siteUrl}`} />
           <meta
             name="twitter:image"
-            content={PNGLogo}
+            content={`${site.siteMetadata.coverImage}`}
           />
           
           <meta property="og:image:width" content="1200" />
