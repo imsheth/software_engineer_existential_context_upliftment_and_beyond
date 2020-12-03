@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import Swipeable from 'react-swipeable';
 import Transition from '../components/transition';
 import Logo from '../assets/imsheth.svg';
+import PNGLogo from '../assets/imsheth.jpeg';
 import Favicon from '../assets/favicon.ico';
 
 import './index.css';
@@ -70,16 +71,18 @@ class TemplateWrapper extends Component {
           <html lang="en" />
           <title>{`${site.siteMetadata.title} - ${site.siteMetadata.description} | ${site.siteMetadata.itemName}`}</title>
           <link rel="icon" href={Favicon} type="image/gif" sizes="16x16"></link>
+          <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+          <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"></link>
           <meta name="description" content={`${site.siteMetadata.itemName}`} />
           <meta property="og:site_name" content={`${site.siteMetadata.title} - ${site.siteMetadata.description} | ${site.siteMetadata.itemName}`} />
           <meta property="og:type" content="website" />
           <meta property="og:title" content={`${site.siteMetadata.title} - ${site.siteMetadata.description} | ${site.siteMetadata.itemName}`} />
           <meta property="og:description" content={`${site.siteMetadata.itemName}`} />
           <meta property="og:url" content={`${site.siteMetadata.siteUrl}`} />
-          {/* <meta
+          <meta
             property="og:image"
-            content={`${`${site.siteMetadata.siteUrl}`}${props.data.header.childImageSharp.fixed.src}`}
-          /> */}
+            content={PNGLogo}
+          />
           {site.siteMetadata.facebook && <meta property="article:publisher" content={`${site.siteMetadata.facebook}`} />}
           <meta name="twitter:card" content="summary" />
           {site.siteMetadata.twitter && (
@@ -91,13 +94,13 @@ class TemplateWrapper extends Component {
           <meta name="twitter:title" content={`${site.siteMetadata.title} - ${site.siteMetadata.description} | ${site.siteMetadata.itemName}`} />
           <meta name="twitter:description" content={`${site.siteMetadata.itemName}`} />
           <meta name="twitter:url" content={`${site.siteMetadata.siteUrl}`} />
-          {/* <meta
+          <meta
             name="twitter:image"
-            content={`${`${site.siteMetadata.siteUrl}`}${props.data.header.childImageSharp.fixed.src}`}
-          /> */}
+            content={PNGLogo}
+          />
           
-          {/* <meta property="og:image:width" content={width.toString()} />
-          <meta property="og:image:height" content={height.toString()} /> */}
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="294" />
         </Helmet>
         <Header
           alt={site.siteMetadata.title}
@@ -138,10 +141,6 @@ export default props => (
             siteUrl
             facebook
             twitter
-            linkedIn
-            github
-            stackoverflow
-            instagram
           }
         }
         allSlide {
