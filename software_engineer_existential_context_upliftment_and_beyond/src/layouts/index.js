@@ -78,13 +78,13 @@ class TemplateWrapper extends Component {
           <meta property="og:type" content="website" />
           <meta property="og:title" content={`${site.siteMetadata.title} - ${site.siteMetadata.description} | ${site.siteMetadata.itemName}`} />
           <meta property="og:description" content={`${site.siteMetadata.itemName}`} />
-          <meta property="og:url" content={`${site.siteMetadata.siteUrl}`} />
+          <meta property="og:url" content={`${site.siteMetadata.itemUrl}`} />
           <meta
             property="og:image"
             content={`${site.siteMetadata.coverImage}`}
           />
           {site.siteMetadata.facebook && <meta property="article:publisher" content={`${site.siteMetadata.facebook}`} />}
-          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:card" content="summary_large_image" />
           {site.siteMetadata.twitter && (
             <meta
               name="twitter:site"
@@ -93,7 +93,7 @@ class TemplateWrapper extends Component {
           )}
           <meta name="twitter:title" content={`${site.siteMetadata.title} - ${site.siteMetadata.description} | ${site.siteMetadata.itemName}`} />
           <meta name="twitter:description" content={`${site.siteMetadata.itemName}`} />
-          <meta name="twitter:url" content={`${site.siteMetadata.siteUrl}`} />
+          <meta name="twitter:url" content={`${site.siteMetadata.itemUrl}`} />
           <meta
             name="twitter:image"
             content={`${site.siteMetadata.coverImage}`}
@@ -141,6 +141,7 @@ export default props => (
             siteUrl
             facebook
             twitter
+            coverImage
           }
         }
         allSlide {

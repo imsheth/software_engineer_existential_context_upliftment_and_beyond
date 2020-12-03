@@ -11,7 +11,7 @@ module.exports = {
     itemUrl: `http://blog.imsheth.com/software_engineer_existential_context_upliftment_and_beyond/`,
     facebook: `https://www.facebook.com/imsheth`,
     twitter: `https://twitter.com/theimsheth`,
-    coverImage: `https://github.com/imsheth/software_engineer_existential_context_upliftment_and_beyond/blob/dev/software_engineer_existential_context_upliftment_and_beyond/src/assets/imsheth.jpeg`,
+    coverImage: `https://raw.githubusercontent.com/imsheth/software_engineer_existential_context_upliftment_and_beyond/dev/software_engineer_existential_context_upliftment_and_beyond/src/assets/imsheth.png`,
   },
   plugins: [
     `gatsby-plugin-layout`,
