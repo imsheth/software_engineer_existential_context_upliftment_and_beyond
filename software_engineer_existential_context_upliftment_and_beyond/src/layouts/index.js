@@ -5,7 +5,6 @@ import Helmet from 'react-helmet';
 import Swipeable from 'react-swipeable';
 import Transition from '../components/transition';
 import Logo from '../assets/imsheth.svg';
-import PNGLogo from '../assets/imsheth.jpeg';
 import Favicon from '../assets/favicon.ico';
 
 import './index.css';
