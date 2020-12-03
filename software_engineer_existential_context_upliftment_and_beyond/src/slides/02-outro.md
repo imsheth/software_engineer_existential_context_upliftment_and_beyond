@@ -71,6 +71,7 @@ Being John Wick
 ---
 
 - Grateful for the enlightment and the reference
+    - ###### [https://dev.to/rahuldkjain/create-deploy-gatsby-blog-on-github-pages-in-minutes-3g8e](//dev.to/rahuldkjain/create-deploy-gatsby-blog-on-github-pages-in-minutes-3g8e)
     - ###### [https://www.gatsbyjs.com/docs/mdx/markdown-syntax/#ordered](//www.gatsbyjs.com/docs/mdx/markdown-syntax/#ordered)
     - ###### [https://cards-dev.twitter.com/validator](//cards-dev.twitter.com/validator)
     - ###### [https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/](//www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/)
