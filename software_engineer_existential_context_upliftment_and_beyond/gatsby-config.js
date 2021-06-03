@@ -8,7 +8,7 @@ module.exports = {
     itemName: `Software engineer : existential context, upliftment and beyond`,
     itemDate: `December 3, 2020`,
     siteUrl: `https://imsheth.com`,
-    itemUrl: `https://imsheth.com/software_engineer_existential_context_upliftment_and_beyond/`,
+    itemUrl: `https://imsheth.com/software_engineer_existential_context_upliftment_and_beyond/1`,
     facebook: `https://www.facebook.com/imsheth`,
     twitter: `https://twitter.com/theimsheth`,
     coverImage: `https://raw.githubusercontent.com/imsheth/software_engineer_existential_context_upliftment_and_beyond/dev/software_engineer_existential_context_upliftment_and_beyond/src/assets/imsheth-banner.png`,
