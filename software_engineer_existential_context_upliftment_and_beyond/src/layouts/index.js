@@ -94,7 +94,7 @@ class TemplateWrapper extends Component {
           
           <meta property="og:image" content={`${site.siteMetadata.coverImage}`} />
           <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="630" />
+          <meta property="og:image:height" content="591" />
           <meta property="og:locale" content="en" />
           <meta property="og:image:alt" content="Banner" />
           <meta property="og:image:type" content="image/png" />
@@ -111,7 +111,7 @@ class TemplateWrapper extends Component {
           <meta name="twitter:image:src" content={`${site.siteMetadata.coverImage}`} />
           <meta name="twitter:image:alt" content="Banner" />
           <meta name="twitter:image:width" content="1200" />
-          <meta name="twitter:image:height" content="630" />
+          <meta name="twitter:image:height" content="591" />
 
           <meta name="MobileOptimized" content="320" />
           <meta name="HandheldFriendly" content="True" />
