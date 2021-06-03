@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"1WVW":function(t,e,n){"use strict";n.r(e);var a=n("q1tI"),i=n.n(a);e.default=function(t){var e=t.data,n=t.transition;return i.a.createElement("div",{style:{width:"100%"}},i.a.createElement("div",{style:n&&n.style,dangerouslySetInnerHTML:{__html:e.slide.html}}))}}}]);
+//# sourceMappingURL=component---src-templates-slide-js-92c07bf3d427143603b5.js.map
