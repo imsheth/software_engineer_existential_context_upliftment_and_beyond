@@ -71,18 +71,17 @@ class TemplateWrapper extends Component {
           <title>{`${site.siteMetadata.itemName} | ${site.siteMetadata.title}`}</title>
 
           <link rel="icon" href={`${site.siteMetadata.favIcon}`} type="image/png"/>
-          <link rel="apple-touch-icon" sizes="48x48" href={`${site.siteMetadata.i48}`} />
-          <link rel="apple-touch-icon" sizes="72x72" href={`${site.siteMetadata.i72}`} />
-          <link rel="apple-touch-icon" sizes="96x96" href={`${site.siteMetadata.i96}`} />
-          <link rel="apple-touch-icon" sizes="144x144" href={`${site.siteMetadata.i144}`} />
-          <link rel="apple-touch-icon" sizes="192x192" href={`${site.siteMetadata.i192}`} />
-          <link rel="apple-touch-icon" sizes="256x256" href={`${site.siteMetadata.i256}`} />
-          <link rel="apple-touch-icon" sizes="384x384" href={`${site.siteMetadata.i384}`} />
-          <link rel="apple-touch-icon" sizes="512x512" href={`${site.siteMetadata.i512}`} />
+          <link rel="apple-touch-icon" sizes="48x48" href={`${site.siteMetadata.icons.i48}`} />
+          <link rel="apple-touch-icon" sizes="72x72" href={`${site.siteMetadata.icons.i72}`} />
+          <link rel="apple-touch-icon" sizes="96x96" href={`${site.siteMetadata.icons.i96}`} />
+          <link rel="apple-touch-icon" sizes="144x144" href={`${site.siteMetadata.icons.i144}`} />
+          <link rel="apple-touch-icon" sizes="192x192" href={`${site.siteMetadata.icons.i192}`} />
+          <link rel="apple-touch-icon" sizes="256x256" href={`${site.siteMetadata.icons.i256}`} />
+          <link rel="apple-touch-icon" sizes="384x384" href={`${site.siteMetadata.icons.i384}`} />
+          <link rel="apple-touch-icon" sizes="512x512" href={`${site.siteMetadata.icons.i512}`} />
 
-          <link rel="preconnect" href="https://fonts.gstatic.com"/>
           <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
-          <link rel="canonical" href={`${site.siteMetadata.itemUrl}`} data-baseprotocol="https:"data-basehost="imsheth.com"/>
+          <link rel="canonical" href={`${site.siteMetadata.itemUrl}`} data-baseprotocol="https:" data-basehost="imsheth.com"/>
 
           <meta name="description" content={`${site.siteMetadata.description}`} />
           <meta name="image" content={`${site.siteMetadata.coverImage}`} />
@@ -157,11 +156,23 @@ export default props => (
             title
             description
             itemName
+            itemUrl
             itemDate
             siteUrl
             facebook
             twitter
             coverImage
+            favIcon
+            icons {
+              i48
+              i72
+              i96
+              i144
+              i192
+              i256
+              i384
+              i512
+            }
           }
         }
         allSlide {
