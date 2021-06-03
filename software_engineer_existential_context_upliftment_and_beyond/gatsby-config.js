@@ -11,7 +11,7 @@ module.exports = {
     itemUrl: `https://imsheth.com/software_engineer_existential_context_upliftment_and_beyond/1`,
     facebook: `https://www.facebook.com/imsheth`,
     twitter: `https://twitter.com/theimsheth`,
-    coverImage: `https://raw.githubusercontent.com/imsheth/software_engineer_existential_context_upliftment_and_beyond/dev/software_engineer_existential_context_upliftment_and_beyond/src/assets/software-engineer-existential-context-upliftment-and-beyond-banner`,
+    coverImage: `https://raw.githubusercontent.com/imsheth/software_engineer_existential_context_upliftment_and_beyond/dev/software_engineer_existential_context_upliftment_and_beyond/src/assets/software-engineer-existential-context-upliftment-and-beyond-banner.png`,
     favIcon: `https://raw.githubusercontent.com/imsheth/software_engineer_existential_context_upliftment_and_beyond/dev/software_engineer_existential_context_upliftment_and_beyond/src/assets/favicon-32x32.png`,
     icons: {
       i48: `https://raw.githubusercontent.com/imsheth/software_engineer_existential_context_upliftment_and_beyond/dev/software_engineer_existential_context_upliftment_and_beyond/src/assets/icons/icon-48x48.png`,
