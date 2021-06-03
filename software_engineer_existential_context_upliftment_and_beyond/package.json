@@ -1,8 +1,9 @@
 {
   "name": "software_engineer_existential_context_upliftment_and_beyond",
+  "private": false,
+  "version": "1.1.0",  
   "description": "Software engineer : existential context, upliftment and beyond",
-  "version": "1.0.0",
-  "author": "Ishan Sheth <contact@imsheth.com>",
+  "author": "Ishan Sheth (@imsheth)",
   "dependencies": {
     "gatsby": "^2.2.0",
     "gatsby-plugin-layout": "^1.0.1",
@@ -21,6 +22,8 @@
     "react-transition-group": "^2.4.0"
   },
   "keywords": [
+    "imsheth",
+    "talks",
     "gatsby",
     "gatsby-starter"
   ],

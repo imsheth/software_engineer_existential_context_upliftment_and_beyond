@@ -5,7 +5,6 @@ import Helmet from 'react-helmet';
 import Swipeable from 'react-swipeable';
 import Transition from '../components/transition';
 import Logo from '../assets/imsheth.svg';
-import Favicon from '../assets/favicon.ico';
 
 import './index.css';
 
@@ -68,38 +67,60 @@ class TemplateWrapper extends Component {
       <div>
         <Helmet>
           <html lang="en" />
-          <title>{`${site.siteMetadata.title} - ${site.siteMetadata.description} | ${site.siteMetadata.itemName}`}</title>
-          <link rel="icon" href={Favicon} type="image/gif" sizes="16x16"></link>
-          <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-          <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"></link>
-          <meta name="description" content={`${site.siteMetadata.itemName}`} />
-          <meta property="og:site_name" content={`${site.siteMetadata.title} - ${site.siteMetadata.description} | ${site.siteMetadata.itemName}`} />
-          <meta property="og:type" content="website" />
-          <meta property="og:title" content={`${site.siteMetadata.title} - ${site.siteMetadata.description} | ${site.siteMetadata.itemName}`} />
-          <meta property="og:description" content={`${site.siteMetadata.itemName}`} />
-          <meta property="og:url" content={`${site.siteMetadata.itemUrl}`} />
-          <meta
-            property="og:image"
-            content={`${site.siteMetadata.coverImage}`}
-          />
-          {site.siteMetadata.facebook && <meta property="article:publisher" content={`${site.siteMetadata.facebook}`} />}
-          <meta name="twitter:card" content="summary_large_image" />
-          {site.siteMetadata.twitter && (
-            <meta
-              name="twitter:site"
-              content={`@${site.siteMetadata.twitter.split('https://twitter.com/')[1]}`}
-            />
-          )}
-          <meta name="twitter:title" content={`${site.siteMetadata.title} - ${site.siteMetadata.description} | ${site.siteMetadata.itemName}`} />
-          <meta name="twitter:description" content={`${site.siteMetadata.itemName}`} />
-          <meta name="twitter:url" content={`${site.siteMetadata.itemUrl}`} />
-          <meta
-            name="twitter:image"
-            content={`${site.siteMetadata.coverImage}`}
-          />
           
+          <title>{`${site.siteMetadata.itemName} | ${site.siteMetadata.title}`}</title>
+
+          <link rel="icon" href={`${site.siteMetadata.favIcon}`} type="image/png"/>
+          <link rel="apple-touch-icon" sizes="48x48" href={`${site.siteMetadata.i48}`} />
+          <link rel="apple-touch-icon" sizes="72x72" href={`${site.siteMetadata.i72}`} />
+          <link rel="apple-touch-icon" sizes="96x96" href={`${site.siteMetadata.i96}`} />
+          <link rel="apple-touch-icon" sizes="144x144" href={`${site.siteMetadata.i144}`} />
+          <link rel="apple-touch-icon" sizes="192x192" href={`${site.siteMetadata.i192}`} />
+          <link rel="apple-touch-icon" sizes="256x256" href={`${site.siteMetadata.i256}`} />
+          <link rel="apple-touch-icon" sizes="384x384" href={`${site.siteMetadata.i384}`} />
+          <link rel="apple-touch-icon" sizes="512x512" href={`${site.siteMetadata.i512}`} />
+
+          <link rel="preconnect" href="https://fonts.gstatic.com"/>
+          <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+          <link rel="canonical" href={`${site.siteMetadata.itemUrl}`} data-baseprotocol="https:"data-basehost="imsheth.com"/>
+
+          <meta name="description" content={`${site.siteMetadata.description}`} />
+          <meta name="image" content={`${site.siteMetadata.coverImage}`} />
+          
+          <meta property="og:url" content={`${site.siteMetadata.itemUrl}`} />
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content={`${site.siteMetadata.title}`} />
+          <meta property="og:title" content={`${site.siteMetadata.itemName} | ${site.siteMetadata.title}`} />
+          <meta property="og:description" content={`${site.siteMetadata.description}`} />
+          
+          <meta property="og:image" content={`${site.siteMetadata.coverImage}`} />
           <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="294" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:locale" content="en" />
+          <meta property="og:image:alt" content="Banner" />
+          <meta property="og:image:type" content="image/png" />
+          <meta property="og:image:secure_url" content={`${site.siteMetadata.coverImage}`} />
+          {site.siteMetadata.facebook && <meta property="article:publisher" content={`${site.siteMetadata.facebook}`} />}
+
+          <meta name="twitter:card" content="summary_large_image" />
+          {site.siteMetadata.twitter && (<meta name="twitter:site" content={`@${site.siteMetadata.twitter.split('https://twitter.com/')[1]}`} /> )}
+          {site.siteMetadata.twitter && (<meta name="twitter:creator" content={`@${site.siteMetadata.twitter.split('https://twitter.com/')[1]}`} /> )}
+          <meta name="twitter:title" content={`${site.siteMetadata.itemName} | ${site.siteMetadata.title}`} />
+          <meta name="twitter:description" content={`${site.siteMetadata.description}`} />
+          <meta name="twitter:url" content={`${site.siteMetadata.itemUrl}`} />
+          <meta name="twitter:image" content={`${site.siteMetadata.coverImage}`} />
+          <meta name="twitter:image:src" content={`${site.siteMetadata.coverImage}`} />
+          <meta name="twitter:image:alt" content="Banner" />
+          <meta name="twitter:image:width" content="1200" />
+          <meta name="twitter:image:height" content="630" />
+
+          <meta name="MobileOptimized" content="320" />
+          <meta name="HandheldFriendly" content="True" />
+          <meta name="google" content="notranslate" />
+          <meta name="referrer" content="no-referrer-when-downgrade" />
+          <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1" />
+          
+          
         </Helmet>
         <Header
           alt={site.siteMetadata.title}
