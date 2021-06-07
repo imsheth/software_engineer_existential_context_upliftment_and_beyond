@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     name: `Ishan Sheth`,
     date: `December 3, 2020`,
-    title: `imsheth - Ishan Sheth`,
+    title: `Ishan Sheth (imsheth)`,
     description: `My thoughts on longevity as a software engineer`,
     itemName: `Software engineer : existential context, upliftment and beyond`,
     itemDate: `December 3, 2020`,
