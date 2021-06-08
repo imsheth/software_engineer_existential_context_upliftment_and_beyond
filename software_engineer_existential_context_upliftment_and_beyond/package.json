@@ -6,6 +6,7 @@
   "author": "Ishan Sheth (@imsheth)",
   "dependencies": {
     "gatsby": "^2.2.0",
+    "gatsby-plugin-google-analytics": "^3.6.0",
     "gatsby-plugin-layout": "^1.0.1",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
